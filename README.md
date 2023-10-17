@@ -2,23 +2,25 @@
 Данный сервис получает на вход колличество вопросов, обращается к стороннему сервису для получения случайных вопросов в заданном колличестве, сохраняет их у себя в БД и возвращает клиенту.
 
 Стэк:
- - FastApi
- - SQLalchemy
- - Postgres
+ - `FastApi`
+ - `SQLalchemy`
+ - `Postgres`
+ - `docker-compose`
 
 Инструкция для запуска:
 1. скопировать.env.dist и переименовать в .env
-2. запустить команду docker-compose up --build
+2. запустить команду `docker-compose up --build`
 
 
-Пример Post-запроса к /questions/ :
+Пример Post-запроса к `/questions/`:
+
 Request:
 ```
 {
   "questions_num": 3
 }
 ```
-Response
+Response:
 ```
 {
   "list": [
